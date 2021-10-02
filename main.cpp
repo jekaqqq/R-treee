@@ -5,20 +5,13 @@
 #include "RTree.h"
 
 
-//
-// MemoryTest.cpp
-//
-// This demonstrates a use of RTree
-//
 
-// Use CRT Debug facility to dump memory leaks on app exit
 #ifdef WIN32
-// These two are for MSVS 2005 security consciousness until safe std lib funcs are available
+
 #pragma warning(disable : 4996) // Deprecated functions
 #define _CRT_SECURE_NO_DEPRECATE // Allow old unsecure standard library functions, Disable some 'warning C4996 - function was deprecated'
 
-// The following macros set and clear, respectively, given bits
-// of the C runtime library debug flag, as specified by a bitmask.
+
 #ifdef   _DEBUG
 #define  SET_CRT_DEBUG_FIELD(a) \
               _CrtSetDbgFlag((a) | _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG))
@@ -30,11 +23,6 @@
 #endif
 #endif //WIN32
 
-//
-// Get a random float b/n two values
-// The returned value is >= min && < max (exclusive of max)
-// Note this is a low precision random value since it is generated from an int.
-//
 static float RandFloat(float a_min, float a_max) {
     const float ooMax = 1.0f / (float) (RAND_MAX + 1);
 
@@ -46,7 +34,7 @@ static float RandFloat(float a_min, float a_max) {
 }
 
 
-/// Simplify handling of 3 dimensional coordinate
+
 struct Vec3 {
     /// Default constructor
     Vec3() {}
