@@ -1,0 +1,3 @@
+C:/Users/jekad/CLionProjects/R-treee/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/jekad/CLionProjects/R-treee/cmake-build-debug/CMakeFiles/R_treee.dir
+C:/Users/jekad/CLionProjects/R-treee/cmake-build-debug/CMakeFiles/edit_cache.dir
