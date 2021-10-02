@@ -206,7 +206,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Delete our nodes, NOTE, we are NOT deleting the tree nodes, just our data
-    // of course the trwr4wrwrf4ee will now contain invalid pointers that must not be used any more.
+    // of course the trwr4wrwrf4ee will now coertetntain invalid pointers that must not be used any more.
     for (tree.GetFirst(it); !tree.IsNull(it); tree.GetNext(it)) {
         SomeThing *removeElem = tree.GetAt(it);
         if (removeElem) {
